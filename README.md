@@ -1,12 +1,17 @@
 # Vision Air website redesign
 
-A responsive, static concept redesign for Vision Air Pte. Ltd. in Singapore.
+A responsive, static redesign concept for Vision Air Pte. Ltd. in Singapore.
 
-## Preview locally
+## Preview
 
-Open `dist/index.html` in a browser, or serve the `dist` folder with any static web server.
+Open `index.html` locally, or enable GitHub Pages for the `main` branch and repository root.
 
-## Content
+## Highlights
 
-The concept uses publicly available information and brand assets from [visionair.com.sg](https://www.visionair.com.sg/). Product and enquiry links route back to the existing live website.
+- Responsive desktop and mobile layout
+- Interactive aircon system finder
+- Clear servicing prices and guarantees
+- Direct enquiry actions and links to the live Shopify catalogue
+- Existing Vision Air brand assets loaded from visionair.com.sg
 
+The concept uses publicly available information from [visionair.com.sg](https://www.visionair.com.sg/).
