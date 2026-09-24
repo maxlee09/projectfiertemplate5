@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vision Air Singapore — Aircon Installation, Servicing & Repair</title>
+  <meta name="description" content="Clear NETT pricing, quality installation materials and dependable aircon servicing in Singapore. Book a free, no-obligation site survey with Vision Air.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23064173'/%3E%3Cpath d='M18 18l12 30 8-20 8 20' fill='none' stroke='%2349c7ed' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M39 17l7 18' stroke='white' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --ink: #08243b;
+      --navy: #064173;
+      --navy-2: #032f55;
+      --blue: #0879b9;
+      --sky: #49c7ed;
+      --ice: #eaf8fc;
+      --paper: #ffffff;
+      --mist: #f5f8fa;
+      --line: #dce8ee;
+      --muted: #587080;
+      --green: #1a7f69;
+      --shadow: 0 24px 70px rgba(4, 45, 76, .14);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: "DM Sans", system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button, select { font: inherit; }
+    .wrap { width: min(1180px, calc(100% - 40px)); margin-inline: auto; }
+    .eyebrow { margin: 0 0 14px; color: var(--blue); font: 800 .76rem/1.2 "Manrope", sans-serif; letter-spacing: .14em; text-transform: uppercase; }
+    h1, h2, h3 { margin: 0; font-family: "Manrope", sans-serif; line-height: 1.08; letter-spacing: -.035em; }
+    h1 { font-size: clamp(2.65rem, 5.5vw, 5.4rem); }
+    h2 { font-size: clamp(2rem, 3.7vw, 3.5rem); }
+    h3 { font-size: 1.3rem; }
+    p { margin: 0; }
+    .btn {
+      display: inline-flex; min-height: 52px; align-items: center; justify-content: center; gap: 9px;
+      padding: 0 22px; border: 1px solid transparent; border-radius: 999px;
+      background: var(--navy); color: white; font-weight: 700; cursor: pointer;
+      transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
+    }
+    .btn:hover { transform: translateY(-2px); background: var(--navy-2); box-shadow: 0 12px 30px rgba(3, 47, 85, .2); }
+    .btn.light { background: white; color: var(--navy); }
+    .btn.ghost { border-color: rgba(255,255,255,.38); background: transparent; }
+    .btn.ghost:hover { background: rgba(255,255,255,.1); }
+    .arrow { font-size: 1.15em; }
+
+    .topbar { background: var(--navy-2); color: rgba(255,255,255,.86); font-size: .82rem; }
+    .topbar .wrap { min-height: 38px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .topbar strong { color: white; }
+    .top-links { display: flex; gap: 20px; }
+    .top-links a:hover { color: var(--sky); }
+    header { position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,.92); border-bottom: 1px solid rgba(220,232,238,.9); backdrop-filter: blur(16px); }
+    .nav { height: 82px; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+    .brand { display: inline-flex; align-items: center; padding: 8px 14px; border-radius: 12px; background: var(--navy); }
+    .brand img { width: 190px; }
+    nav { display: flex; align-items: center; gap: 30px; font-weight: 700; color: #29495d; }
+    nav a { position: relative; }
+    nav a::after { content: ""; position: absolute; left: 0; right: 100%; bottom: -8px; height: 2px; background: var(--sky); transition: right .2s ease; }
+    nav a:hover::after { right: 0; }
+    .nav-cta { min-height: 44px; padding-inline: 18px; }
+    .menu-btn { display: none; width: 44px; height: 44px; border: 0; border-radius: 50%; background: var(--ice); color: var(--navy); font-size: 1.4rem; cursor: pointer; }
+
+    .hero { overflow: hidden; background: linear-gradient(120deg, var(--navy-2), var(--navy)); color: white; }
+    .hero-grid { min-height: 690px; display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: 44px; padding: 70px 0; }
+    .hero-copy { position: relative; z-index: 2; }
+    .hero .eyebrow { color: #85def4; }
+    .hero h1 span { color: var(--sky); }
+    .hero-lede { max-width: 620px; margin: 24px 0 30px; color: rgba(255,255,255,.78); font-size: 1.16rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .trust-row { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-top: 32px; color: rgba(255,255,255,.86); font-size: .91rem; }
+    .trust-row span::before { content: "✓"; display: inline-grid; width: 21px; height: 21px; margin-right: 8px; place-items: center; border-radius: 50%; background: rgba(73,199,237,.18); color: var(--sky); font-weight: 800; }
+    .hero-visual { position: relative; align-self: stretch; min-height: 550px; }
+    .hero-visual::before { content: ""; position: absolute; width: 470px; height: 470px; right: -80px; top: -80px; border-radius: 50%; border: 1px solid rgba(255,255,255,.12); box-shadow: 0 0 0 80px rgba(255,255,255,.03), 0 0 0 160px rgba(255,255,255,.018); }
+    .photo-card { position: absolute; inset: 25px 0 35px 34px; overflow: hidden; border-radius: 34px 34px 160px 34px; box-shadow: var(--shadow); }
+    .photo-card img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.03); }
+    .photo-card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 55%, rgba(3,47,85,.35)); }
+    .rating-card { position: absolute; right: -12px; bottom: 18px; z-index: 3; width: 220px; padding: 19px; border-radius: 18px; background: white; color: var(--ink); box-shadow: var(--shadow); }
+    .stars { color: #f6a623; letter-spacing: .12em; }
+    .rating-card b { display: block; margin-top: 4px; font-family: "Manrope"; }
+    .rating-card small { color: var(--muted); }
+
+    .finder { position: relative; z-index: 5; margin-top: -36px; }
+    .finder-card { display: grid; grid-template-columns: .8fr 1.2fr auto; align-items: end; gap: 22px; padding: 26px 28px; border: 1px solid var(--line); border-radius: 22px; background: white; box-shadow: var(--shadow); }
+    .finder-title { align-self: center; }
+    .finder-title strong { display: block; font: 800 1.12rem "Manrope"; }
+    .finder-title span { color: var(--muted); font-size: .91rem; }
+    label { display: block; margin-bottom: 7px; color: var(--muted); font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+    select { width: 100%; min-height: 52px; padding: 0 42px 0 16px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); }
+    .finder-result { min-width: 235px; padding: 11px 14px; border-radius: 12px; background: var(--ice); color: var(--navy); font-weight: 700; }
+    .finder-result small { display: block; color: var(--muted); font-weight: 500; }
+
+    section { padding: 110px 0; }
+    .section-head { display: grid; grid-template-columns: .8fr 1.2fr; align-items: end; gap: 40px; margin-bottom: 50px; }
+    .section-head p { max-width: 560px; justify-self: end; color: var(--muted); font-size: 1.06rem; }
+    .solutions { background: var(--mist); }
+    .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .solution-card { position: relative; min-height: 370px; display: flex; flex-direction: column; padding: 30px; overflow: hidden; border: 1px solid var(--line); border-radius: 22px; background: white; transition: transform .25s ease, box-shadow .25s ease; }
+    .solution-card:hover { transform: translateY(-5px); box-shadow: 0 18px 50px rgba(8,36,59,.1); }
+    .card-no { color: var(--blue); font: 800 .76rem "Manrope"; letter-spacing: .13em; }
+    .solution-card h3 { margin: 40px 0 12px; font-size: 1.75rem; }
+    .solution-card p { color: var(--muted); }
+    .card-link { margin-top: auto; padding-top: 28px; color: var(--navy); font-weight: 800; }
+    .card-link:hover { color: var(--blue); }
+    .solution-card.featured { background: var(--navy); color: white; border-color: var(--navy); }
+    .solution-card.featured p { color: rgba(255,255,255,.7); }
+    .solution-card.featured .card-no, .solution-card.featured .card-link { color: var(--sky); }
+    .solution-card.featured::after { content: ""; position: absolute; right: -60px; bottom: -80px; width: 240px; height: 240px; border: 45px solid rgba(73,199,237,.1); border-radius: 50%; }
+
+    .promise-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 75px; align-items: center; }
+    .promise-visual { position: relative; min-height: 530px; }
+    .promise-visual img { width: 90%; height: 500px; object-fit: cover; border-radius: 30px 100px 30px 30px; }
+    .warranty-badge { position: absolute; right: 0; bottom: 0; width: 190px; aspect-ratio: 1; display: grid; place-items: center; padding: 30px; border-radius: 50%; background: var(--sky); color: var(--navy-2); text-align: center; box-shadow: var(--shadow); font: 800 1rem/1.25 "Manrope"; }
+    .promise-copy > p { margin: 22px 0 30px; color: var(--muted); font-size: 1.06rem; }
+    .proof-list { display: grid; gap: 0; border-top: 1px solid var(--line); }
+    .proof { display: grid; grid-template-columns: 54px 1fr; gap: 16px; padding: 21px 0; border-bottom: 1px solid var(--line); }
+    .proof-icon { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 12px; background: var(--ice); color: var(--blue); font-weight: 800; }
+    .proof p { color: var(--muted); font-size: .94rem; }
+
+    .pricing { background: var(--navy-2); color: white; }
+    .pricing .eyebrow { color: var(--sky); }
+    .pricing .section-head p { color: rgba(255,255,255,.68); }
+    .price-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .price-card { padding: 30px; border: 1px solid rgba(255,255,255,.12); border-radius: 22px; background: rgba(255,255,255,.06); }
+    .price-card.highlight { background: white; color: var(--ink); }
+    .price-card h3 { font-size: 1.45rem; }
+    .price { margin: 25px 0 4px; font: 800 2.45rem "Manrope"; letter-spacing: -.05em; }
+    .price small { font: 500 .9rem "DM Sans"; letter-spacing: 0; opacity: .68; }
+    .price-card > p { min-height: 52px; color: rgba(255,255,255,.68); }
+    .price-card.highlight > p, .price-card.highlight li { color: var(--muted); }
+    .price-card ul { list-style: none; padding: 20px 0 0; margin: 22px 0 26px; border-top: 1px solid rgba(255,255,255,.13); }
+    .price-card.highlight ul { border-color: var(--line); }
+    .price-card li { padding: 7px 0; color: rgba(255,255,255,.8); }
+    .price-card li::before { content: "✓"; margin-right: 9px; color: var(--sky); font-weight: 800; }
+    .fine-print { margin-top: 20px; color: rgba(255,255,255,.56); font-size: .84rem; }
+
+    .process { background: var(--mist); }
+    .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin-top: 48px; }
+    .step { position: relative; padding: 28px 28px 0 0; }
+    .step:not(:last-child)::after { content: ""; position: absolute; left: 56px; right: 10px; top: 49px; border-top: 1px dashed #9cb8c7; }
+    .step-no { position: relative; z-index: 1; width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; background: var(--navy); color: white; font-weight: 800; box-shadow: 0 0 0 8px var(--mist); }
+    .step h3 { margin: 27px 0 10px; }
+    .step p { color: var(--muted); font-size: .94rem; }
+
+    .brands { padding: 70px 0; border-bottom: 1px solid var(--line); }
+    .brand-strip { display: grid; grid-template-columns: 1.2fr repeat(5, 1fr); align-items: center; gap: 22px; }
+    .brand-strip > p { color: var(--muted); font-weight: 700; }
+    .brand-logo { height: 72px; display: grid; place-items: center; padding: 14px; border: 1px solid var(--line); border-radius: 14px; background: white; }
+    .brand-logo img { max-height: 38px; max-width: 110px; object-fit: contain; filter: grayscale(1); opacity: .68; }
+
+    .cta { padding: 90px 0; }
+    .cta-card { position: relative; overflow: hidden; display: grid; grid-template-columns: 1.2fr auto; gap: 40px; align-items: center; padding: 58px; border-radius: 30px; background: linear-gradient(115deg, var(--navy), #087cab); color: white; }
+    .cta-card::after { content: ""; position: absolute; width: 320px; height: 320px; right: -100px; top: -170px; border: 55px solid rgba(255,255,255,.08); border-radius: 50%; }
+    .cta-card h2 { max-width: 760px; }
+    .cta-card p { margin-top: 14px; color: rgba(255,255,255,.74); }
+    .cta-actions { position: relative; z-index: 2; display: flex; flex-direction: column; gap: 10px; min-width: 210px; }
+
+    footer { padding: 65px 0 28px; background: #061e31; color: rgba(255,255,255,.72); }
+    .footer-grid { display: grid; grid-template-columns: 1.5fr repeat(3, 1fr); gap: 50px; padding-bottom: 45px; }
+    .footer-brand img { width: 190px; }
+    .footer-brand p { max-width: 360px; margin-top: 18px; }
+    footer h3 { margin-bottom: 18px; color: white; font-size: 1rem; }
+    footer a { display: block; margin: 9px 0; }
+    footer a:hover { color: var(--sky); }
+    .copyright { display: flex; justify-content: space-between; gap: 20px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.1); font-size: .82rem; }
+
+    @media (max-width: 980px) {
+      nav { display: none; position: absolute; top: 82px; left: 20px; right: 20px; padding: 22px; align-items: stretch; flex-direction: column; gap: 16px; border: 1px solid var(--line); border-radius: 16px; background: white; box-shadow: var(--shadow); }
+      nav.open { display: flex; }
+      .menu-btn { display: block; }
+      .hero-grid { min-height: auto; grid-template-columns: 1fr; padding: 70px 0 80px; }
+      .hero-copy { max-width: 760px; }
+      .hero-visual { min-height: 450px; }
+      .photo-card { inset: 0 5% 20px 5%; }
+      .finder-card { grid-template-columns: 1fr 1fr; }
+      .finder-result { grid-column: 1 / -1; }
+      .promise-grid { grid-template-columns: 1fr; gap: 55px; }
+      .promise-visual { width: min(650px, 100%); }
+      .steps { grid-template-columns: repeat(2, 1fr); row-gap: 30px; }
+      .step:nth-child(2)::after { display: none; }
+      .brand-strip { grid-template-columns: repeat(5, 1fr); }
+      .brand-strip > p { grid-column: 1 / -1; }
+      .footer-grid { grid-template-columns: 1.5fr 1fr 1fr; }
+      .footer-brand { grid-column: 1 / -1; }
+    }
+
+    @media (max-width: 720px) {
+      .wrap { width: min(100% - 28px, 1180px); }
+      .topbar .wrap { justify-content: center; }
+      .top-links { display: none; }
+      .nav { height: 70px; }
+      .brand { padding: 7px 11px; }
+      .brand img { width: 150px; }
+      nav { top: 70px; left: 14px; right: 14px; }
+      section { padding: 80px 0; }
+      .hero-grid { padding-top: 58px; }
+      h1 { font-size: clamp(2.45rem, 12vw, 3.65rem); }
+      .hero-visual { min-height: 340px; }
+      .photo-card { left: 0; right: 0; border-radius: 24px 24px 90px 24px; }
+      .rating-card { right: 4px; width: 190px; padding: 15px; }
+      .finder-card { grid-template-columns: 1fr; padding: 22px; }
+      .finder-result { grid-column: auto; }
+      .section-head { grid-template-columns: 1fr; gap: 18px; }
+      .section-head p { justify-self: start; }
+      .card-grid, .price-grid { grid-template-columns: 1fr; }
+      .solution-card { min-height: 300px; }
+      .promise-visual { min-height: 390px; }
+      .promise-visual img { height: 370px; width: 94%; }
+      .warranty-badge { width: 145px; padding: 20px; font-size: .84rem; }
+      .steps { grid-template-columns: 1fr; }
+      .step:not(:last-child)::after { left: 21px; right: auto; top: 68px; bottom: -22px; height: auto; border-top: 0; border-left: 1px dashed #9cb8c7; }
+      .brand-strip { grid-template-columns: repeat(2, 1fr); }
+      .brand-strip .brand-logo:last-child { grid-column: 1 / -1; }
+      .cta-card { grid-template-columns: 1fr; padding: 38px 26px; }
+      .cta-actions { align-items: stretch; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 35px; }
+      .footer-brand { grid-column: 1 / -1; }
+      .copyright { flex-direction: column; }
+    }
+
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="wrap">
+      <span><strong>Quality & service you can trust.</strong> Clear NETT pricing with no hidden charges.</span>
+      <div class="top-links"><a href="tel:+6566125112">Call 6612 5112</a><a href="mailto:support@visionair.com.sg">Email us</a></div>
+    </div>
+  </div>
+
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="Vision Air home"><img src="https://www.visionair.com.sg/cdn/shop/t/3/assets/logo.png?v=111667315440500088541480959719" alt="Vision Air"></a>
+      <nav id="main-nav" aria-label="Main navigation">
+        <a href="#solutions">Aircon systems</a>
+        <a href="#servicing">Servicing</a>
+        <a href="#promise">Why Vision Air</a>
+        <a href="#process">How it works</a>
+        <a class="btn nav-cta" href="mailto:support@visionair.com.sg?subject=Free%20site%20survey%20request">Book a free survey</a>
+      </nav>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation">☰</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Air-conditioning specialists · Singapore</p>
+          <h1>Comfort, installed <span>with clarity.</span></h1>
+          <p class="hero-lede">From choosing the right system to keeping it running quietly, Vision Air gives you honest advice, quality materials and one clear NETT price.</p>
+          <div class="hero-actions">
+            <a class="btn light" href="mailto:support@visionair.com.sg?subject=Free%20aircon%20site%20survey">Book a free site survey <span class="arrow">→</span></a>
+            <a class="btn ghost" href="https://www.visionair.com.sg/collections" target="_blank" rel="noopener">Browse aircon systems</a>
+          </div>
+          <div class="trust-row" aria-label="Vision Air benefits">
+            <span>NETT pricing</span><span>BCA-qualified technicians</span><span>Workmanship warranty</span>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="photo-card"><img src="https://www.visionair.com.sg/cdn/shop/t/3/assets/slide_2_1024x1024.jpg?v=182657831827085381251480472267" alt=""></div>
+          <div class="rating-card"><span class="stars">★★★★★</span><b>Built for peace of mind</b><small>Survey, quotation, installation & aftercare</small></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="finder">
+      <div class="wrap">
+        <div class="finder-card">
+          <div class="finder-title"><strong>Not sure what you need?</strong><span>Start with the number of rooms to cool.</span></div>
+          <div>
+            <label for="rooms">Rooms to air-condition</label>
+            <select id="rooms">
+              <option value="single">1 room</option>
+              <option value="system2">2 rooms</option>
+              <option value="system3" selected>3 rooms</option>
+              <option value="system4">4 rooms</option>
+            </select>
+          </div>
+          <a class="finder-result" id="finder-link" href="https://www.visionair.com.sg/collections/system-3-inverters" target="_blank" rel="noopener">System 3 inverter <small id="finder-note">A common fit for three bedrooms</small></a>
+        </div>
+      </div>
+    </div>
+
+    <section class="solutions" id="solutions">
+      <div class="wrap">
+        <div class="section-head">
+          <div><p class="eyebrow">Choose your comfort</p><h2>A clearer way to find your aircon.</h2></div>
+          <p>Shop by the number of rooms you need to cool, or let our team recommend the best configuration after a free site survey.</p>
+        </div>
+        <div class="card-grid">
+          <article class="solution-card">
+            <span class="card-no">01 · SINGLE ROOM</span>
+            <h3>Single split</h3>
+            <p>One indoor unit paired with one outdoor compressor. Ideal for a bedroom, study or compact space.</p>
+            <a class="card-link" href="https://www.visionair.com.sg/collections/single-split-inverter" target="_blank" rel="noopener">View single split systems <span class="arrow">→</span></a>
+          </article>
+          <article class="solution-card featured">
+            <span class="card-no">02 · WHOLE HOME</span>
+            <h3>Multi-split systems</h3>
+            <p>Connect two to four indoor units to one outdoor compressor for efficient, flexible cooling across your home.</p>
+            <a class="card-link" href="https://www.visionair.com.sg/collections/system-3-inverters" target="_blank" rel="noopener">Explore multi-split options <span class="arrow">→</span></a>
+          </article>
+          <article class="solution-card">
+            <span class="card-no">03 · CARE & REPAIR</span>
+            <h3>Servicing & repair</h3>
+            <p>Routine maintenance, chemical overhauls, troubleshooting and repairs by experienced technicians.</p>
+            <a class="card-link" href="#servicing">Compare servicing plans <span class="arrow">↓</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="promise">
+      <div class="wrap promise-grid">
+        <div class="promise-visual">
+          <img src="https://www.visionair.com.sg/cdn/shop/t/3/assets/slide_5_1024x1024.jpg?v=98917425580525937111527303888" alt="Vision Air installation and warranty service">
+          <div class="warranty-badge">90-day guarantee against water leakage after servicing</div>
+        </div>
+        <div class="promise-copy">
+          <p class="eyebrow">The Vision Air standard</p>
+          <h2>What’s behind the trunking matters.</h2>
+          <p>We believe the best installation is the one you do not have to worry about. That means quality materials, careful workmanship and advice that puts your home first.</p>
+          <div class="proof-list">
+            <div class="proof"><span class="proof-icon">22</span><div><h3>Thicker 22 SWG copper pipes</h3><p>Selected to better withstand refrigerant pressure compared with the common industry standard.</p></div></div>
+            <div class="proof"><span class="proof-icon">½″</span><div><h3>Generous thermal insulation</h3><p>Half-inch insulation for standard installations helps reduce heat transfer and condensation risk.</p></div></div>
+            <div class="proof"><span class="proof-icon">16</span><div><h3>16 mm drainage pipes</h3><p>A wider drainage path for smoother water flow and a lower chance of blockages.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="servicing">
+      <div class="wrap">
+        <div class="section-head">
+          <div><p class="eyebrow">Straightforward servicing</p><h2>Plans that fit how often you use your aircon.</h2></div>
+          <p>All prices shown are NETT. Contract plans are paid in full when accepted. Repair work is quoted after diagnosis.</p>
+        </div>
+        <div class="price-grid">
+          <article class="price-card">
+            <h3>Ad hoc servicing</h3>
+            <div class="price">From $40 <small>/ unit</small></div>
+            <p>One-off care for occasional users or before an important event.</p>
+            <ul><li>1 unit at $50</li><li>2 units at $45 each</li><li>3+ units at $40 each</li></ul>
+            <a class="btn ghost" href="tel:+6566125112">Call to book</a>
+          </article>
+          <article class="price-card highlight">
+            <h3>Quarterly contract</h3>
+            <div class="price">From $30 <small>/ unit</small></div>
+            <p>Four services a year for households that use air-conditioning regularly.</p>
+            <ul><li>1 unit at $40 each visit</li><li>2 units at $35 each</li><li>3+ units at $30 each</li></ul>
+            <a class="btn" href="mailto:support@visionair.com.sg?subject=Quarterly%20servicing%20plan">Enquire about this plan</a>
+          </article>
+          <article class="price-card">
+            <h3>Chemical overhaul</h3>
+            <div class="price">From $150 <small>/ unit</small></div>
+            <p>A deeper clean for clogged coils, poor cooling and stubborn build-up.</p>
+            <ul><li>$180 for non-contract customers</li><li>$150 for contract customers</li><li>Parts dismantled and cleaned</li></ul>
+            <a class="btn ghost" href="mailto:support@visionair.com.sg?subject=Chemical%20overhaul%20enquiry">Ask about an overhaul</a>
+          </article>
+        </div>
+        <p class="fine-print">Pricing reflects the information published by Vision Air. A site assessment may be needed for non-standard work or repairs.</p>
+      </div>
+    </section>
+
+    <section class="process" id="process">
+      <div class="wrap">
+        <p class="eyebrow">From survey to switch-on</p>
+        <h2>A calm, transparent installation.</h2>
+        <div class="steps">
+          <div class="step"><span class="step-no">1</span><h3>Tell us about your home</h3><p>Share the rooms you want to cool and any current aircon concerns.</p></div>
+          <div class="step"><span class="step-no">2</span><h3>Free site survey</h3><p>We assess your layout and recommend a practical installation route.</p></div>
+          <div class="step"><span class="step-no">3</span><h3>Clear NETT quotation</h3><p>You see the scope, materials and final price before work begins.</p></div>
+          <div class="step"><span class="step-no">4</span><h3>Install with confidence</h3><p>Our team completes the work and provides the relevant warranty documents.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="brands">
+      <div class="wrap brand-strip">
+        <p>Trusted aircon brands, installed with care.</p>
+        <div class="brand-logo"><img src="https://www.visionair.com.sg/cdn/shop/collections/Daikin_logo_1_medium.png?v=1479297863" alt="Daikin"></div>
+        <div class="brand-logo"><img src="https://www.visionair.com.sg/cdn/shop/collections/mitsubishi_medium.jpg?v=1479297918" alt="Mitsubishi Electric"></div>
+        <div class="brand-logo"><img src="https://www.visionair.com.sg/cdn/shop/collections/panasonic_logo_medium.png?v=1480503943" alt="Panasonic"></div>
+        <div class="brand-logo"><img src="https://www.visionair.com.sg/cdn/shop/collections/mitsubishi-heavy-industries_medium.png?v=1480937844" alt="Mitsubishi Heavy Industries"></div>
+        <div class="brand-logo"><img src="https://www.visionair.com.sg/cdn/shop/collections/Midea_logo_medium.png?v=1481045387" alt="Midea"></div>
+      </div>
+    </div>
+
+    <section class="cta">
+      <div class="wrap">
+        <div class="cta-card">
+          <div><p class="eyebrow">Let’s make your home comfortable</p><h2>Get the right aircon system—not just the first one you find.</h2><p>Book a free, no-obligation site survey with the Vision Air team.</p></div>
+          <div class="cta-actions"><a class="btn light" href="tel:+6566125112">Call 6612 5112</a><a class="btn ghost" href="mailto:support@visionair.com.sg?subject=Free%20site%20survey%20request">Send an email</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand"><img src="https://www.visionair.com.sg/cdn/shop/t/3/assets/logo.png?v=111667315440500088541480959719" alt="Vision Air"><p>Honest air-conditioning advice, quality installation and dependable aftercare for Singapore homes and businesses.</p></div>
+        <div><h3>Explore</h3><a href="#solutions">Aircon systems</a><a href="#servicing">Servicing plans</a><a href="#promise">Installation standards</a></div>
+        <div><h3>Contact</h3><a href="tel:+6566125112">6612 5112</a><a href="mailto:support@visionair.com.sg">support@visionair.com.sg</a><span>64 Jalan Sinar Bulan<br>Singapore 507064</span></div>
+        <div><h3>Company</h3><a href="https://www.visionair.com.sg/pages/about-us" target="_blank" rel="noopener">About Vision Air</a><a href="https://www.visionair.com.sg/pages/our-works" target="_blank" rel="noopener">Our works</a><a href="https://www.facebook.com/visionairsg" target="_blank" rel="noopener">Facebook</a></div>
+      </div>
+      <div class="copyright"><span>© 2026 Vision Air Pte. Ltd. · UEN 201621248E</span><span>Concept redesign · Existing shop links open on visionair.com.sg</span></div>
+    </div>
+  </footer>
+
+  <script>
+    const systems = {
+      single: { title: 'Single split inverter', note: 'A focused solution for one room', url: 'https://www.visionair.com.sg/collections/single-split-inverter' },
+      system2: { title: 'System 2 inverter', note: 'Two rooms, one outdoor compressor', url: 'https://www.visionair.com.sg/collections/system-2-inverters' },
+      system3: { title: 'System 3 inverter', note: 'A common fit for three bedrooms', url: 'https://www.visionair.com.sg/collections/system-3-inverters' },
+      system4: { title: 'System 4 inverter', note: 'Whole-home cooling for four rooms', url: 'https://www.visionair.com.sg/collections/system-4-inverters' }
+    };
+    const roomSelect = document.querySelector('#rooms');
+    const finderLink = document.querySelector('#finder-link');
+    const finderNote = document.querySelector('#finder-note');
+    roomSelect.addEventListener('change', () => {
+      const system = systems[roomSelect.value];
+      finderLink.firstChild.textContent = system.title + ' ';
+      finderNote.textContent = system.note;
+      finderLink.href = system.url;
+    });
+    const menuButton = document.querySelector('.menu-btn');
+    const nav = document.querySelector('#main-nav');
+    menuButton.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(open));
+      menuButton.textContent = open ? '×' : '☰';
+    });
+    nav.addEventListener('click', (event) => {
+      if (event.target.tagName === 'A') {
+        nav.classList.remove('open');
+        menuButton.setAttribute('aria-expanded', 'false');
+        menuButton.textContent = '☰';
+      }
+    });
+  </script>
+</body>
+</html>
+
