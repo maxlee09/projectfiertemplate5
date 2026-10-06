@@ -161,6 +161,16 @@
     .brand-logo { height: 72px; display: grid; place-items: center; padding: 14px; border: 1px solid var(--line); border-radius: 14px; background: white; }
     .brand-logo img { max-height: 38px; max-width: 110px; object-fit: contain; filter: grayscale(1); opacity: .68; }
 
+    .guides { background: var(--paper); }
+    .guide-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .guide-card { display: flex; min-height: 350px; flex-direction: column; padding: 30px; border: 1px solid var(--line); border-radius: 22px; background: white; transition: transform .25s ease, box-shadow .25s ease; }
+    .guide-card:hover { transform: translateY(-5px); box-shadow: 0 18px 50px rgba(8,36,59,.1); }
+    .guide-tag { width: fit-content; padding: 7px 11px; border-radius: 999px; background: var(--ice); color: var(--blue); font-size: .76rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+    .guide-card h3 { margin: 28px 0 14px; font-size: 1.65rem; }
+    .guide-card p { color: var(--muted); }
+    .guide-card a { margin-top: auto; padding-top: 26px; color: var(--navy); font-weight: 800; }
+    .guide-card a:hover { color: var(--blue); }
+
     .cta { padding: 90px 0; }
     .cta-card { position: relative; overflow: hidden; display: grid; grid-template-columns: 1.2fr auto; gap: 40px; align-items: center; padding: 58px; border-radius: 30px; background: linear-gradient(115deg, var(--navy), #087cab); color: white; }
     .cta-card::after { content: ""; position: absolute; width: 320px; height: 320px; right: -100px; top: -170px; border: 55px solid rgba(255,255,255,.08); border-radius: 50%; }
@@ -215,7 +225,7 @@
       .finder-result { grid-column: auto; }
       .section-head { grid-template-columns: 1fr; gap: 18px; }
       .section-head p { justify-self: start; }
-      .card-grid, .price-grid { grid-template-columns: 1fr; }
+      .card-grid, .price-grid, .guide-grid { grid-template-columns: 1fr; }
       .solution-card { min-height: 300px; }
       .promise-visual { min-height: 390px; }
       .promise-visual img { height: 370px; width: 94%; }
@@ -249,6 +259,7 @@
         <a href="#solutions">Aircon systems</a>
         <a href="#servicing">Servicing</a>
         <a href="#promise">Why Vision Air</a>
+        <a href="#guides">Aircon guides</a>
         <a href="#process">How it works</a>
         <a class="btn nav-cta" href="mailto:support@visionair.com.sg?subject=Free%20site%20survey%20request">Book a free survey</a>
       </nav>
@@ -264,7 +275,7 @@
           <h1>Comfort, installed <span>with clarity.</span></h1>
           <p class="hero-lede">From choosing the right system to keeping it running quietly, Vision Air gives you honest advice, quality materials and one clear NETT price.</p>
           <div class="hero-actions">
-            <a class="btn light" href="mailto:support@visionair.com.sg?subject=Free%20aircon%20site%20survey">Book a free site survey <span class="arrow">→</span></a>
+            <a class="btn light" href="mailto:support@visionair.com.sg?subject=Free%20aircon%20site%20survey">Book a free site survey</a>
             <a class="btn ghost" href="https://www.visionair.com.sg/collections" target="_blank" rel="noopener">Browse aircon systems</a>
           </div>
           <div class="trust-row" aria-label="Vision Air benefits">
@@ -307,19 +318,19 @@
             <span class="card-no">01 · SINGLE ROOM</span>
             <h3>Single split</h3>
             <p>One indoor unit paired with one outdoor compressor. Ideal for a bedroom, study or compact space.</p>
-            <a class="card-link" href="https://www.visionair.com.sg/collections/single-split-inverter" target="_blank" rel="noopener">View single split systems <span class="arrow">→</span></a>
+            <a class="card-link" href="https://www.visionair.com.sg/collections/single-split-inverter" target="_blank" rel="noopener">View single split systems</a>
           </article>
           <article class="solution-card featured">
             <span class="card-no">02 · WHOLE HOME</span>
             <h3>Multi-split systems</h3>
             <p>Connect two to four indoor units to one outdoor compressor for efficient, flexible cooling across your home.</p>
-            <a class="card-link" href="https://www.visionair.com.sg/collections/system-3-inverters" target="_blank" rel="noopener">Explore multi-split options <span class="arrow">→</span></a>
+            <a class="card-link" href="https://www.visionair.com.sg/collections/system-3-inverters" target="_blank" rel="noopener">Explore multi-split options</a>
           </article>
           <article class="solution-card">
             <span class="card-no">03 · CARE & REPAIR</span>
             <h3>Servicing & repair</h3>
             <p>Routine maintenance, chemical overhauls, troubleshooting and repairs by experienced technicians.</p>
-            <a class="card-link" href="#servicing">Compare servicing plans <span class="arrow">↓</span></a>
+            <a class="card-link" href="#servicing">Compare servicing plans</a>
           </article>
         </div>
       </div>
@@ -401,6 +412,35 @@
       </div>
     </div>
 
+    <section class="guides" id="guides">
+      <div class="wrap">
+        <div class="section-head">
+          <div><p class="eyebrow">Vision Air explains</p><h2>Clear answers before you book.</h2></div>
+          <p>Understand common aircon problems, compare service options and make a more confident installation decision.</p>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-card">
+            <span class="guide-tag">Troubleshooting</span>
+            <h3>Why is my aircon leaking water?</h3>
+            <p>Learn the common causes, what you can check safely and when the problem needs professional attention.</p>
+            <a href="guides/aircon-leaking.html">Read the guide</a>
+          </article>
+          <article class="guide-card">
+            <span class="guide-tag">Servicing</span>
+            <h3>Chemical wash or chemical overhaul?</h3>
+            <p>See how the two services differ and avoid paying for a deeper clean when your unit does not need one.</p>
+            <a href="guides/chemical-wash-vs-overhaul.html">Compare the services</a>
+          </article>
+          <article class="guide-card">
+            <span class="guide-tag">Buying guide</span>
+            <h3>System 3 or System 4?</h3>
+            <p>Compare room usage, capacity, installation needs and long-term flexibility before choosing a system.</p>
+            <a href="guides/system-3-vs-system-4.html">Choose the right system</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="cta">
       <div class="wrap">
         <div class="cta-card">
@@ -415,7 +455,7 @@
     <div class="wrap">
       <div class="footer-grid">
         <div class="footer-brand"><img src="https://www.visionair.com.sg/cdn/shop/t/3/assets/logo.png?v=111667315440500088541480959719" alt="Vision Air"><p>Honest air-conditioning advice, quality installation and dependable aftercare for Singapore homes and businesses.</p></div>
-        <div><h3>Explore</h3><a href="#solutions">Aircon systems</a><a href="#servicing">Servicing plans</a><a href="#promise">Installation standards</a></div>
+        <div><h3>Explore</h3><a href="#solutions">Aircon systems</a><a href="#servicing">Servicing plans</a><a href="#promise">Installation standards</a><a href="#guides">Aircon guides</a></div>
         <div><h3>Contact</h3><a href="tel:+6566125112">6612 5112</a><a href="mailto:support@visionair.com.sg">support@visionair.com.sg</a><span>64 Jalan Sinar Bulan<br>Singapore 507064</span></div>
         <div><h3>Company</h3><a href="https://www.visionair.com.sg/pages/about-us" target="_blank" rel="noopener">About Vision Air</a><a href="https://www.visionair.com.sg/pages/our-works" target="_blank" rel="noopener">Our works</a><a href="https://www.facebook.com/visionairsg" target="_blank" rel="noopener">Facebook</a></div>
       </div>
